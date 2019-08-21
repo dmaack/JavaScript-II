@@ -81,13 +81,12 @@ console.log(sumNums(5,2, multiply));
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  return cb(item, list);
+    return cb(item,list);
 }
-
-const newArray = items.filter((item, list) => {
-  return true || false;
-});
-console.log(newArray);
+const checkItem = (item, list) => {
+  console.log(list.includes(item));
+}
+  contains(items[0],items, checkItem);
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {

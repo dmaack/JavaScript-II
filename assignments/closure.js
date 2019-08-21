@@ -4,7 +4,20 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
-
+function school(schoolName) {
+  const module1= 'UI'
+  const module2='JavaScript'
+  console.log(`${schoolName} is a school that offers ${module1} and ${module2} as part of their first learning topics`);
+  function classRoom(className) {
+    const cohort= 'Web23'
+    function student(studentName){
+      console.log(`${studentName} is part of the ${className} ${cohort} cohort at ${schoolName}  where she has completed ${module1} and ${module2} modules in her first 3 weeks of school`)
+    }//closes student
+    student('Dominique');
+  }//closes class
+  classRoom('Web Development')
+}//closes school
+school('Lambda')
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
