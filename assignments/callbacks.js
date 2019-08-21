@@ -84,9 +84,9 @@ function contains(item, list, cb) {
     return cb(item,list);
 }
 const checkItem = (item, list) => {
-  console.log(list.includes(item));
+  return list.includes(item);
 }
-  contains(items[0],items, checkItem);
+  console.log(contains(items[0],items, checkItem));
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
