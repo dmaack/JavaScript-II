@@ -82,7 +82,7 @@ console.log(runnersLargeSizeShirt);
 let ticketPriceTotal = runners.reduce(function(acc, item) {
   return acc + item.donation;
 })
-console.log(ticketPriceTotal);
+console.log(runners.reduce(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
@@ -98,7 +98,7 @@ console.log(ticketPriceTotal);
   })
   console.log(emailList);
   
-// Problem 3 - alphabetize company name
+// Problem 3 - separate out companies and donations
 let sortCompany = [];
 runners.forEach(function(items) {
    sortCompany.push(`${items.company_name} ${items.donation}`);
